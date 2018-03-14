@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多列等高布局</title>
+	<link rel="stylesheet" type="text/css" href="./styles/equal-height.css">
+</head>
+<body>
+	<h1>1. 绝对定位</h1>
+	<div class="outer">
+	  <div class="left">
+	    <div class="equh"></div>
+	    <div class="left-con">
+	      <p>left</p>
+	      <p>left</p>
+	      <p>left</p>
+	    </div>
+	  </div>
+	  <div class="right">
+	    <p>right</p>
+	    <p>right</p>
+	    <p>right</p>
+	    <p>right</p>
+	    <p>right</p>
+	  </div>
+	</div>
+	<hr>
+	<h1>2. padding-bottom与margin-bottom</h1>
+	<div class="box">
+	  <div class="sub">
+	    <p>a</p>
+	  </div>
+	  <div class="sub">
+	    <p>b</p>
+	    <p>b</p>
+	  </div>
+	  <div class="sub">
+	    <p>c</p>
+	    <p>c</p>
+	    <p>c</p>
+	  </div>
+	</div>
+	<hr>
+	<h1>3. 利用table-cell</h1>
+	<h2>该方案利用了所有单元格高度都相等的特性，不过由于ie6/7不支持该属性，因此略有瑕疵。不过总的来说还是非常不错的方案。</h2>
+	<div class="box2">
+	  <div class="row">
+	    <div class="cell">你一定也有过这种感觉的。当你心事重重，渴望找一个人聊一聊的时候，那个可以聊的人来了，可是你们却并没有聊什么。当然，聊是聊了，可是他聊他的，你也试着开始聊你的，只是到后来，你放弃了……那么，最后的办法就是静下来，啃啮自己的寂寞。或者反过来说，让寂寞来吞噬你。------罗兰《寂寞的感觉》</div>
+	    <div class="cell">作为一个被基阿异捅过两个大血窟窿的人。告诉后来的基友们一句：一命二运三风水，四积阴功五读书。</div>
+	    <div class="cell">奔波了一天，收到了无数的生日快乐，享受了电影见面会现场各种形式的祝福和礼物，以及场面宏大的生日快乐歌，感谢＜西风烈＞，感谢支持我的朋友们！现在机场举长寿面祝你们都永远幸福快乐！</div>
+	  </div>
+	</div>
+	<hr>
+	<h1>4. 弹性盒模型</h1>
+	<div class="box3">
+	  <div class="cell">你一定也有过这种感觉的。当你心事重重，渴望找一个人聊一聊的时候，那个可以聊的人来了，可是你们却并没有聊什么。当然，聊是聊了，可是他聊他的，你也试着开始聊你的，只是到后来，你放弃了……那么，最后的办法就是静下来，啃啮自己的寂寞。或者反过来说，让寂寞来吞噬你。------罗兰《寂寞的感觉》</div>
+	  <div class="cell">作为一个被基阿异捅过两个大血窟窿的人。告诉后来的基友们一句：一命二运三风水，四积阴功五读书。</div>
+	  <div class="cell">奔波了一天，收到了无数的生日快乐，享受了电影见面会现场各种形式的祝福和礼物，以及场面宏大的生日快乐歌，感谢＜西风烈＞，感谢支持我的朋友们！现在机场举长寿面祝你们都永远幸福快乐！</div>
+	</div>
+</body>
+</html>
